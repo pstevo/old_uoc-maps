@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.map-container {
+  width: 100%;       /* Full width of the parent element */
+  height: 100vh;     /* Or any other height */
+  /* You can also use 'height: 100vh;' for full viewport height */
+}
+
+.fs-div{
+  pointer-events: auto;
+  bottom: 2em;
+  right: .5em;
+  position: absolute;
+  background-color: var(--ol-subtle-background-color);
+  border-radius: 4px;
+}
+
+.fs-button{
+  border-radius: 2px 2px 0 0;
+  display: block;
+  margin: 1px;
+  padding: 0;
+  color: var(--ol-subtle-foreground-color);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: inherit;
+  text-align: center;
+  height: 1.375em;
+  width: 1.375em;
+  line-height: .4em;
+  background-color: var(--ol-background-color);
+  border: none;
+  border-radius: 2px;
+}
+
+.fs-button:hover{
+  text-decoration: none;
+  outline: 1px solid var(--ol-subtle-foreground-color);
+  color: var(--ol-foreground-color);
+}
+
+.fs-button:focus{
+  text-decoration: none;
+  outline: 1px solid var(--ol-subtle-foreground-color);
+  color: var(--ol-foreground-color);
+}
+
+/* .ol-zoom {
+  right: 0.5em !important;
+} */
